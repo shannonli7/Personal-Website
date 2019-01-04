@@ -26,7 +26,7 @@
 }
 .sidenav {
   height: 100%;
-  width: 190px;
+  width: 200px;
   position: fixed;
   z-index: 1;
   top: 0;
@@ -39,8 +39,9 @@
 .sidenav a {
   padding: 6px 6px 6px 32px;
   text-decoration: none;
+  font-family: 'Lora', serif;
   font-size: 25px;
-  color: #818181;
+  color: #22E1A1;
   display: block;
 }
 
@@ -53,7 +54,7 @@
 }
 
 @media screen and (max-height: 450px) {
-  .sidenav {padding-top: 10px;}
+  .sidenav {padding-top: 20px;}
   .sidenav a {font-size: 13px;}
 }
 </style>
@@ -62,18 +63,29 @@
 <body>
     <div class="sidenav">
       <span class="d-none d-lg-block">
-            <img src="profile.pdf.JPG" class ="image1" style="width:190px" alt="">
+            <img src="profile.pdf.JPG" class ="image1" style="width:170px;position:absolute;left:20px;
+            top:100px;margin: 0px 15px 15px 0px;" alt="">
       </span>
     <br>
     <br>
     <br>
-    <a href="#">About</a>
-    <a href="#">Education</a>
-    <a href="#">Experience</a>
-    <a href="#">Projects</a>
-    <a href="#">Skills</a>
-    <a href="#">Interest</a>
-    <a href="#">Contact</a>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <a href="#About">About</a>
+    <a href="#Education">Education</a>
+    <a href="#Experience">Experience</a>
+    <a href="#Projects">Projects</a>
+    <a href="#Skills">Skills</a>
+    <a href="#Interests">Interests</a>
+    <a href="#Contact">Contact</a>
     </div>
     <div class="main">
     <div class="jumbotron">
@@ -87,6 +99,27 @@
       </div>
     </div>
     </div>
+    </div>
+    <div id="About">
+    <h2 class="display-1"> About Me! </h2>
+    </div>
+    <div id="Education">
+    <h2 class="display-1"> Education </h2>
+    </div>
+    <div id="Experience">
+    <h2 class="display-3"> Experience </h2>
+    </div>
+    <div id="Projects">
+    <h2 class="display-3"> Projects </h2>
+    </div>
+    <div id="Skills">
+    <h2 class="display-3"> Skills </h2>
+    </div>
+    <div id="Interests">
+    <h2 class="display-3"> Interests </h2>
+    </div>
+    <div id="Contact">
+    <h2 class="display-3"> Contact </h2>
     </div>
     </div>
   </div>
