@@ -1,22 +1,85 @@
 <!DOCTYPE html>
-
 <html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<style>
+.vertical-center {
+  min-height: 20%;  /* Fallback for browsers do NOT support vh unit */
+  min-height: 20vh;
+  min-width: 70%; /* These two lines are counted as one :-)       */
+  display: flex;
+  align-items: right;
+  text-align: right;
+}
 
-  <head>
+.image1{
+  border-radius: 50%;
+}
 
-    <meta charset="utf-8">
+.sidenav {
+  height: 100%;
+  width: 200px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
 
-    <title>Shannon Li</title>
+.sidenav a {
+  padding: 6px 6px 6px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+}
 
-    <!-- Bootstrap core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+.sidenav a:hover {
+  color: #f1f1f1;
+}
 
-    <!-- Custom styles for this template -->
-    <link rel="stylesheet" type="text/css" href="css/website.css">.
+.main {
+  margin-left: 200px; /* Same as the width of the sidenav */
+}
 
-  </head>
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 10px;}
+  .sidenav a {font-size: 13px;}
+}
+</style>
+</style>
 
-  <body>
-  </body>
+<body>
+    <div class="sidenav">
+    <a href="#">About</a>
+    <a href="#">Services</a>
+    <a href="#">Clients</a>
+    <a href="#">Contact</a>
+    </div>
+    <div class="main">
+    <div class="jumbotron">
 
+    <div class="container">
+      <div class="row">
+      <h1>Hi, I'm Shannon Li</h1>
+      <p>I'm a freshman at University of Michigan, intending to study computer science!
+      <br>
+      Learn more about me!</p>
+    </div>
+    <div class="col-md-6">
+        <img src="profile.pdf.JPG" class ="image1" style="width:200px">
+    </div>
+    </div>
+    </div>
+    </div>
+  </div>
+</body>
 </html>
