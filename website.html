@@ -3,7 +3,9 @@
 <head>
   <title>Shannon Li</title>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="HandheldFriendly" content="true">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
@@ -36,7 +38,7 @@
   z-index: 1;
   top: 0;
   left: 0;
-  background-color: #2565B9;
+  background-color: #312775;
   overflow-x: hidden;
   padding-top: 20px;
 }
@@ -46,7 +48,7 @@
   text-decoration: none;
   font-family: 'Lora', serif;
   font-size: 20px;
-  color: #DEEA2D;
+  color: #3495F7;
   display: block;
 }
 
@@ -70,6 +72,9 @@ h2{
 
 p{
   color: white;
+  font-family: 'Lora', serif;
+  font-size: 14px;
+  text-align: center;
 }
 
 .carousel {
@@ -78,10 +83,13 @@ p{
   margin: auto;
 }
 
-.linkedin{
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+.container-carousel{
+
+}
+
+.socialimage{
+  display: inline;
+  align-items: center;
   width: 50%;
 }
 
@@ -99,14 +107,15 @@ p{
   color: black;
   text-align: center;
 }
+
 </style>
 </style>
 
 <body>
     <div class="sidenav">
       <span class="d-none d-lg-block">
-            <img src="profile.pdf.JPG" class ="image1" style="width:170px;position:absolute;left:20px;
-            top:150px;margin: 0px 15px 15px 0px;" alt="">
+            <img src="profile.pdf.JPG" class ="image1" style="width:170px;position:absolute;left:16px;
+            top:130px;margin: 0px 15px 15px 0px;" alt="">
       </span>
     <br>
     <br>
@@ -115,8 +124,6 @@ p{
     <br>
     <br>
     <br>
-    <br>
-    <br
     <br>
     <br>
     <br>
@@ -132,7 +139,7 @@ p{
     <div id="texts" style="display:inline; white-space:nowrap; color:white; font-family: 'Lora', serif; font-size:15px;">
         Home: New York City
     </div>
-    <p> Currently: Ann Arbor, Michigan </p>
+    <p> Current: Ann Arbor, Michigan </p>
   </div>
     <a href="#About">About</a>
     <a href="#Education">Education</a>
@@ -141,6 +148,7 @@ p{
     <a href="#Skills">Skills</a>
     <a href="#Interests">Interests</a>
     <a href="#Contact">Contact</a>
+    <a href="#Resume">Resume</a>
     </div>
     <div class="main">
     <div class="jumbotron">
@@ -158,7 +166,7 @@ p{
     </div>
     </div>
     <div id="About">
-    <div class="container">
+    <div class="container-carousel">
   <div id="myCarousel" class="carousel slide" data-ride="carousel">
     <!-- Indicators -->
     <ol class="carousel-indicators">
@@ -197,15 +205,8 @@ p{
   <br>
   </div>
   <h2 class="display-1"> About Me! </h2>
-<div class="Resume-words"
-<p>Resume <br> Click on the Resume enlarge it.</p>
-<a target="_blank" href="Resume_ ShannonLi.pdf">
-  <img src="resume.jpg.png" class="resume" alt="resume" style="width:150px">
-</a>
-</div>
     <div class="container-1">
-    <p1> Hi there! I'm Shannon Li. I am originally from New York City, but I am currently
-    located in Ann Arbor, Michigan. I am a freshman at University of Michigan
+    <p1> Hi there! I'm Shannon Li. I am currently a freshman at University of Michigan
     planning to major in Computer Science and minor in Business Administration.
     As a queer woman of color interested in pursuing tech, I hope to be a prime representation, and hopefully
     be a part of the next forthcoming, transforming the world through technology! </p1>
@@ -223,24 +224,73 @@ p{
     </div>
     <div id="Experience">
     <h2 class="display-3"> Experience </h2>
+    <h4> RBC Capital Market </h4>
+    <p3> Global Market Summer Intern </p3>
+    <p4> As a Global Market Summer Intern, I had the opportunity to work on the
+      Sales and Trading team, analyzing VIX graphs, exploring municipal finance,
+      and the intersection between business and technology.
+    </p4>
     </div>
     <div id="Projects">
     <h2 class="display-3"> Projects </h2>
+    <h5> DJ 183 </h5>
+    <p5> DJ 183 is a music guessing quiz utilizing Billboard's Library to generate
+      genre and song choices for users to guess the correct song! It is coded
+    in HTML, CSS, Bootstrap, Python, Google Firebase, and Webscraping </p5>
     </div>
+    <h5> Ciphers </h5>
+    <p5> Ciphers is a project in which when user enters a message, the user gets
+      to choose whether they would like their message crypted or decrypted in
+      Caeser cipher, Vigenère cipher, or Polybius square! </p5>
     <div id="Skills">
     <h2 class="display-3"> Skills </h2>
+    <div class="progress">
+      <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 10%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+      </div>
+      <div class="progress">
+        <div class="progress-bar progress-bar-striped bg-success" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+      </div>
+      <div class="progress">
+        <div class="progress-bar progress-bar-striped bg-info" role="progressbar" style="width: 25%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+      </div>
+      <div class="progress">
+        <div class="progress-bar progress-bar-striped bg-warning" role="progressbar" style="width: 25%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+      </div>
+      <div class="progress">
+        <div class="progress-bar progress-bar-striped bg-danger" role="progressbar" style="width: 25%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+      </div>
     </div>
     <div id="Interests">
     <h2 class="display-3"> Interests </h2>
+    <h10> Activism </h10>
+    <p10> LGBTQ+ <br> People of Color <br> Women's Rights <br> Intersectional Movement <br> International Relations</p10>
+    <br>
+    <h11> Culinary Arts </h11>
+    <br>
+    <h12> Journalism </h12>
     </div>
+    <center>
     <div id="Contact">
     <h2 class="display-3"> Contact </h2>
     <a href="https://www.linkedin.com/in/shannonli7">
-      <img src="linkedin.png" target="_blank" class="linkedin" alt="social" style="width:42px;height:42px;border:0;">
+      <img src="linkedin.png" target="_blank" class="socialimage" alt="social" style="width:42px;height:42px;border:0;">
+    </a>
+    <a href="https://github.com/shannonli7">
+      <img src="github.png" target="_blank" class="socialimage" alt="social" style="width:42px;height:42px;border:0;">
     </a>
     <a href="mailto:shannon11.6li@gmail.com">
-      <img src="gmail.png" target="_blank" class="email" alt="social" style="width:42px;height:42px;border:0;">
+      <img src="gmail.png" target="_blank" class="socialimage" alt="social" style="width:42px;height:42px;border:0;">
     </a>
+    </div>
+    </center>
+    <div id="Resume">
+    <h2 class="display-3"> Resume </h2>
+    <div class="Resume-words" style="white-space:nowrap"
+    <p>Check out my Resume!<br> Click on the Resume enlarge it.</p>
+    <a target="_blank" href="Resume_ ShannonLi.pdf">
+      <img src="resume.jpg.png" class="resume" alt="resume" style="width:150px">
+    </a>
+    </div>
     </div>
     </div>
   </div>
