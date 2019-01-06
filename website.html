@@ -83,10 +83,6 @@ p{
   margin: auto;
 }
 
-.container-carousel{
-
-}
-
 .socialimage{
   display: inline;
   align-items: center;
@@ -109,7 +105,7 @@ p{
 }
 
 p1{
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Lora', serif;
   font-size: 20px;
 }
 
@@ -119,7 +115,9 @@ p1{
   border-color: #4fbfa8;
   font-weight: bold;
   letter-spacing: 0.05em;
-
+  width:auto;
+  float:left;
+  margin-left: 1.5em;
 }
 
 .btn-outline {
@@ -137,6 +135,39 @@ p1{
   background: #1B69DF;
   color: #ECF330;
   border-color: #1B69DF;
+}
+
+.medium-btn {
+  line-height: 35px;
+  font-size: 20px;
+  font-family: 'Lora', serif;
+  width: 280px;
+  height: 45px;
+}
+
+p2{
+  margin-left: 3em;
+  font-family: 'Lora', serif;
+}
+
+p20{
+  font-family: 'Lora', serif;
+}
+
+h5{
+  font-family: 'Lora', serif;
+}
+
+h4{
+  font-family: 'Lora', serif;
+}
+
+p3{
+  font-family: 'Lora', serif;
+}
+
+p4{
+  font-family: 'Lora', serif;
 }
 
 </style>
@@ -180,24 +211,23 @@ p1{
     <a href="#Contact">Contact</a>
     <a href="#Resume">Resume</a>
     </div>
-    <div class="main">
-    <div class="jumbotron">
-    <div class="container">
-      <div class="row">
-      <div class = "textinjumbo">
-      <h1>Hi, I'm Shannon Li</h1>
-      <p>University of Michigan' 22
-      <br>
-      Hopeful Software Engineer, Intersectional Activist, New Yorker — Not necessarily in that order
-      <br>
-      </p>
-      </div>
+<div class="main">
+      <div class="jumbotron">
+        <div class="container">
+          <div class="row">
+            <div class = "textinjumbo">
+              <h1>Hi, I'm Shannon Li</h1>
+              <p>University of Michigan' 22
+                <br>
+                Hopeful Software Engineer, Intersectional Activist, New Yorker — Not necessarily in that order
+                <br>
+              </p>
+            </div>
+          </div>
+        </div>
     </div>
-    </div>
-    </div>
-    <div id="About">
     <div class="container-carousel">
-  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <div id="myCarousel" class="carousel slide" data-ride="carousel">
     <!-- Indicators -->
     <ol class="carousel-indicators">
       <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -233,112 +263,148 @@ p1{
   <br>
   <br>
   <br>
-  </div>
-  <h2 class="display-1"> About Me! </h2>
-    <div class="AboutMe">
-    <p1> Hi there! I'm Shannon Li. I am currently a freshman at University of Michigan
-    planning to major in Computer Science and minor in Business Administration.
-    As a queer woman of color interested in pursuing tech, I hope to be a prime representation, and hopefully
-    be a part of the next forthcoming, transforming the world through technology! </p1>
-    </div>
-    </div>
-    <div id="Education">
-    <h2 class="display-1"> Education </h2>
-    <p><a href="#" class="btn btn-outline btn-rounded">University of Michigan</a></p>
-    <p2>
+</div>
+
+<div id="About">
+    <!-- Content section of About Me-->
+    <section class="py-5">
+        <h2> About Me! </h2>
+        <div class="AboutMe">
+        Hi there! I'm Shannon Li. I am currently a freshman at University of Michigan
+        planning to major in Computer Science and minor in Business Administration.
+        As a queer woman of color interested in pursuing tech, I hope to be a prime representation, and hopefully
+        be a part of the next forthcoming, transforming the world through technology!
+        </div>
+    </section>
+</div>
+
+<div id="Education">
+    <h2> Education </h2>
+    <p><a href="https://umich.edu/" class="btn btn-outline medium-btn btn-rounded" style="border-radius: 4px;">University of Michigan</a></p>
+    <section class="py-5">
+            <br>
+            <br>
+            <br>
+            2018-2022
+            <br>
+            Bachelors of Science in Computer Science from LSA
+      </section>
+</div>
     <br>
-    2018-2022
     <br>
-    Bachelors of Science in Computer Science from LSA
-    </p2>
-    </div>
-    <div id="Experience">
-    <h2 class="display-3"> Experience </h2>
-    <h4> RBC Capital Market </h4>
-    <p3> Global Market Summer Intern </p3>
-    <p4> As a Global Market Summer Intern, I had the opportunity to work on the
-      Sales and Trading team, analyzing VIX graphs, exploring municipal finance,
-      and the intersection between business and technology.
-    </p4>
-    </div>
-    <div id="Projects">
-    <h2 class="display-3"> Projects </h2>
-    <h5> DJ 183 </h5>
-    <p5> DJ 183 is a music guessing quiz utilizing Billboard's Library to generate
-      genre and song choices for users to guess the correct song! It is coded
-    in HTML, CSS, Bootstrap, Python, Google Firebase, and Webscraping </p5>
-    </div>
-    <h5> Ciphers </h5>
-    <p5> Ciphers is a project in which when user enters a message, the user gets
-      to choose whether they would like their message crypted or decrypted in
-      Caeser cipher, Vigenère cipher, or Polybius square! </p5>
-    <div id="Skills">
-    <h2 class="display-3"> Skills </h2>
-    <p20> Google Drive </p20>
-    <div class="progress">
-      <div class="progress-bar progress-bar-success progress-bar-striped" role="progressbar" aria-valuenow="40"
-      aria-valuemin="0" aria-valuemax="100" style="width:60%">
-      </div>
-    </div>
-    <p21> Excel </p21>
-    <div class="progress">
-      <div class="progress-bar progress-bar-success progress-bar-striped" role="progressbar" aria-valuenow="40"
-      aria-valuemin="0" aria-valuemax="100" style="width:50%">
-      </div>
-    </div>
-    <p22> Web Development: HTML, CSS, Bootstrap </p22>
-    <div class="progress">
-      <div class="progress-bar progress-bar-success progress-bar-striped" role="progressbar" aria-valuenow="40"
-      aria-valuemin="0" aria-valuemax="100" style="width:40%">
-      </div>
-    </div>
-    <p23> C++ </p23>
-    <div class="progress">
-      <div class="progress-bar progress-bar-success progress-bar-striped" role="progressbar" aria-valuenow="40"
-      aria-valuemin="0" aria-valuemax="100" style="width:30%">
-      </div>
-    </div>
-    <p24> Python </p24>
-    <div class="progress">
-      <div class="progress-bar progress-bar-success progress-bar-striped" role="progressbar" aria-valuenow="40"
-      aria-valuemin="0" aria-valuemax="100" style="width:20%">
-      </div>
-    </div>
-    </div>
-    <div id="Interests">
-    <h2 class="display-3"> Interests </h2>
-    <h10> Activism </h10>
     <br>
-    <p10> LGBTQ+ <br> People of Color <br> Women's Rights <br> Intersectional Movement <br> International Relations</p10>
-    <br>
-    <h11> Culinary Arts </h11>
-    <br>
-    <h12> Journalism </h12>
-    </div>
-    <center>
-    <div id="Contact">
-    <h2 class="display-3"> Contact </h2>
-    <a href="https://www.linkedin.com/in/shannonli7">
-      <img src="linkedin.png" target="_blank" class="socialimage" alt="social" style="width:42px;height:42px;border:0;">
-    </a>
-    <a href="https://github.com/shannonli7">
-      <img src="github.png" target="_blank" class="socialimage" alt="social" style="width:42px;height:42px;border:0;">
-    </a>
-    <a href="mailto:shannon11.6li@gmail.com">
-      <img src="gmail.png" target="_blank" class="socialimage" alt="social" style="width:42px;height:42px;border:0;">
-    </a>
-    </div>
-    </center>
-    <div id="Resume">
-    <h2 class="display-3"> Resume </h2>
-    <div class="Resume-words" style="white-space:nowrap"
-    <p>Check out my Resume!<br> Click on the Resume enlarge it.</p>
-    <a target="_blank" href="Resume_ ShannonLi.pdf">
-      <img src="resume.jpg.png" class="resume" alt="resume" style="width:150px">
-    </a>
-    </div>
-    </div>
-    </div>
-  </div>
+
+<div id="Experience">
+      <section class="py-5">
+          <h2> Experience </h2>
+          <div class="Experience">
+            RBC Capital Market <br>
+            Global Market Summer Intern <br>
+            As a Global Market Summer Intern, I had the opportunity to work on the
+            Sales and Trading team, analyzing VIX graphs, exploring municipal finance,
+            and the intersection between business and technology.
+          </div>
+      </section>
+</div>
+
+<div id="Projects">
+      <section class="py-5">
+          <h2> Projects </h2>
+          <div class="Projects">
+            DJ 183 <br>
+            DJ 183 is a music guessing quiz utilizing Billboard's Library to generate
+            genre and song choices for users to guess the correct song! It is coded
+            in HTML, CSS, Bootstrap, Python, Google Firebase, and Webscraping </p5>
+            <br>
+            Ciphers <br>
+            Ciphers is a project in which when user enters a message, the user gets
+            to choose whether they would like their message crypted or decrypted in
+            Caeser cipher, Vigenère cipher, or Polybius square! </p5>
+            <br>
+          </div>
+      </section>
+</div>
+
+<div id="Skills">
+      <section class="py-5">
+          <h2> Skills </h2>
+          <div class="Skills">
+                <p20> Google Drive </p20>
+                <div class="progress">
+                  <div class="progress-bar progress-bar-success progress-bar-striped" role="progressbar" aria-valuenow="40"
+                  aria-valuemin="0" aria-valuemax="100" style="width:60%">
+                  </div>
+                </div>
+                <p20> Excel </p20>
+                <div class="progress">
+                  <div class="progress-bar progress-bar-success progress-bar-striped" role="progressbar" aria-valuenow="40"
+                  aria-valuemin="0" aria-valuemax="100" style="width:50%">
+                  </div>
+                </div>
+                <p20> Web Development: HTML, CSS, Bootstrap </p20>
+                <div class="progress">
+                  <div class="progress-bar progress-bar-success progress-bar-striped" role="progressbar" aria-valuenow="40"
+                  aria-valuemin="0" aria-valuemax="100" style="width:40%">
+                  </div>
+                </div>
+                <p20> C++ </p20>
+                <div class="progress">
+                  <div class="progress-bar progress-bar-success progress-bar-striped" role="progressbar" aria-valuenow="40"
+                  aria-valuemin="0" aria-valuemax="100" style="width:30%">
+                  </div>
+                </div>
+                <p20> Python </p20>
+                <div class="progress">
+                  <div class="progress-bar progress-bar-success progress-bar-striped" role="progressbar" aria-valuenow="40"
+                  aria-valuemin="0" aria-valuemax="100" style="width:20%">
+                  </div>
+                </div>
+          </div>
+      </section>
+</div>
+
+<div id="Interests">
+      <section class="py-5">
+          <h2> Interests</h2>
+          <div class="Interests">
+            Activism <br>
+            LGBTQ+ <br> People of Color <br> Women's Rights <br> Intersectional Movement <br> International Relations
+            <br>
+            Culinary Arts
+            Journalism
+          </div>
+      </section>
+</div>
+
+<div id="Contact">
+      <section class="py-5">
+          <h2>Contact</h2>
+          <div class="Contact">
+            <center>
+            <a href="https://www.linkedin.com/in/shannonli7">
+              <img src="linkedin.png" target="_blank" class="socialimage" alt="social" style="width:42px;height:42px;border:0;">
+            </a>
+            <a href="https://github.com/shannonli7">
+              <img src="github.png" target="_blank" class="socialimage" alt="social" style="width:42px;height:42px;border:0;">
+            </a>
+            <a href="mailto:shannon11.6li@gmail.com">
+              <img src="gmail.png" target="_blank" class="socialimage" alt="social" style="width:42px;height:42px;border:0;">
+            </center>
+          </div>
+      </section>
+</div>
+
+<div id="Resume">
+    <section class="py-5">
+      <h2> Resume </h2>
+        <div class="Resume-words" style="white-space:nowrap"
+            <a target="_blank" href="Resume_ ShannonLi.pdf">
+              <img src="resume.jpg.png" class="resume" alt="resume" style="width:150px">
+            </a>
+        </div>
+</div>
+
+</div>
+</div>
 </body>
 </html>
