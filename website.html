@@ -55,6 +55,54 @@
 .sidenav a:hover {
   color: #f1f1f1;
 }
+
+header {
+  position: relative;
+  height: 75vh;
+  min-height: 25rem;
+  width: 100%;
+  overflow: hidden;
+}
+
+header video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: 0;
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+}
+
+header .container {
+  position: relative;
+  z-index: 2;
+}
+
+header .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  text
+  opacity: 0.5;
+  z-index: 1;
+}
+
+@media (pointer: coarse) and (hover: none) {
+  header {
+    background: url('https://source.unsplash.com/XT5OInaElMw/1600x900') black no-repeat center center scroll;
+  }
+  header video {
+    display: none;
+  }
+}
 h2{
   text-align: left;
   font-size: 45px;
@@ -187,6 +235,10 @@ p1{
   border-color: #1B69DF;
 }
 
+.card-img-top{
+  height: 100%;
+  width: 100%;
+}
 p2{
   margin-left: 3em;
   font-family: 'Lora', serif;
@@ -208,10 +260,6 @@ p4{
   font-family: 'Lora', serif;
 }
 
-.card-img-top{
-  width: 100%;
-  height: 100%;
-}
 
 .card{
   display:inline-block;
@@ -257,6 +305,17 @@ p4{
   }
 }
 
+h22{
+  color: white;
+}
+
+.AboutMe{
+  color: white;
+}
+
+.sections{
+  background-color: #0D205E;
+}
 </style>
 
 <body>
@@ -294,7 +353,7 @@ p4{
     </div>
   </div>
   <br>
-  <br>
+    <a href="#I'm-Shannon!">Hi, I'm Shannon!</a>
     <a href="#myCarousel">Home</a>
     <a href="#About">About</a>
     <a href="#Education">Education</a>
@@ -306,7 +365,7 @@ p4{
     <a href="#Resume">Resume</a>
     </div>
 <div class="main">
-      <div class="jumbotron">
+      <div id="I'm-Shannon!" class="jumbotron">
         <div class="container">
           <div class="row">
             <div class = "textinjumbo">
@@ -363,28 +422,33 @@ p4{
       <span class="sr-only">Next</span>
     </a>
   </div>
-  <br>
-  <br>
-  <br>
 </div>
 
 <div id="About">
-    <section class="py-5">
-        <h2> About Me! </h2>
-        <div class="AboutMe">
-        Hi there! I'm Shannon Li. I am currently a freshman at University of Michigan
-        planning to major in Computer Science and minor in Business Administration.
-        As a queer woman of color interested in pursuing tech, I hope to be a prime representation, and hopefully
-        be a part of the next forthcoming, transforming the world through technology!
-        </div>
-    </section>
-    <br>
-    <br>
+  <header>
+  <div class="overlay"></div>
+  <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+    <source src="https://storage.googleapis.com/coverr-main/mp4/Mt_Baker.mp4" type="video/mp4">
+  </video>
+  <div class="container h-100">
+    <div class="d-flex h-100 text-center align-items-center">
+      <div class="w-100 text-white">
+            <h22 class="display-3 "> About Me! </h22>
+            <div class="AboutMe">
+            Hi there! I'm Shannon Li. I am currently a freshman at University of Michigan
+            planning to major in Computer Science and minor in Business Administration.
+            As a queer woman of color interested in pursuing tech, I hope to be a prime representation, and hopefully
+            be a part of the next forthcoming, transforming the world through technology!
+            </div>
+      </div>
+    </div>
+  </div>
+</header>
 </div>
 
 <div id="Education">
-    <h2> Education </h2>
     <div class="sections">
+    <h22 class="display-3 "> Education </h22>
     <section class="page-section clearfix">
       <div class="container">
         <div class="intro">
@@ -509,28 +573,26 @@ p4{
                   <img class="card-img-top img-fluid" src="lgbt.jpeg" alt="Card image cap">
                   <div class="card-body">
                     <h4 class="card-title">Activism</h4>
-                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                     <p class="card-text"><small class="text-muted">Check it out!</small></p>
                   </div>
                 </div>
               </div>
+
               <div class="carousel-item col-md-4">
                 <div class="card">
-                  <img class="card-img-top img-fluid" src="http://placehold.it/800x600/418cf4/fff" alt="Card image cap">
+                  <img class="card-img-top img-fluid" src="culinary.png" alt="Card image cap">
                   <div class="card-body">
                     <h4 class="card-title">Culinary Arts</h4>
-                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                     <p class="card-text"><small class="text-muted">Check it out!</small></p>
                   </div>
                 </div>
               </div>
+
               <div class="carousel-item col-md-4">
                 <div class="card">
-                  <img class="card-img-top img-fluid" src="http://placehold.it/800x600/3ed846/fff" alt="Card image cap">
+                  <img class="card-img-top img-fluid" src="journalism.png" alt="Card image cap">
                   <div class="card-body">
                     <h4 class="card-title">Journalism</h4>
-                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                    <p class="card-text"><small class="text-muted">Check it out!</small></p>
                   </div>
                 </div>
               </div>
