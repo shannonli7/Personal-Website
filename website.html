@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous">
 </head>
 <style>
 .vertical-center {
@@ -18,11 +19,9 @@
   display: flex;
   align-items: right;
 }
-
 .image1{
   border-radius: 50%;
 }
-
 .jumbotron{
   background-image: url("nyc.jpg");
   background-size: cover;
@@ -42,7 +41,6 @@
   overflow-x: hidden;
   padding-top: 20px;
 }
-
 .sidenav a {
   padding: 6px 6px 6px 32px;
   text-decoration: none;
@@ -51,44 +49,37 @@
   color: #3495F7;
   display: block;
 }
-
 .sidenav a:hover {
   color: #f1f1f1;
 }
-
 h2{
   text-align: center;
   font-size: 45px;
+  text-decoration: underline;
 }
-
 .main {
   margin-left: 200px;
 }
-
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 20px;}
   .sidenav a {font-size: 13px;}
 }
-
 p{
   color: white;
   font-family: 'Lora', serif;
   font-size: 14px;
   text-align: center;
 }
-
 .carousel {
   width:620px;
   height:380px;
   margin: auto;
 }
-
 .socialimage{
   display: inline;
   align-items: center;
   width: 50%;
 }
-
 .resume {
   border: 1px solid #ddd;
   border-radius: 4px;
@@ -98,18 +89,73 @@ p{
   margin-left: auto;
   margin-right: auto;
 }
-
 .Resume-words{
   color: black;
   text-align: center;
 }
-
 p1{
   font-family: 'Lora', serif;
   font-size: 20px;
 }
+.intro {
+  position: relative;
+}
 
-.btn-outline {
+@media (min-width: 992px) {
+  .intro .intro-img {
+    width: 75%;
+    float: right;
+  }
+  .intro .intro-text {
+    left: 0;
+    width: 60%;
+    margin-top: 3rem;
+    position: absolute;
+  }
+  .intro .intro-text .intro-button {
+    width: 100%;
+    left: 0;
+    position: absolute;
+    bottom: -2rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .intro .intro-text {
+    width: 45%;
+    position: absolute;
+  }
+}
+
+.section-heading {
+  text-transform: uppercase;
+  position: relative;
+}
+
+.section-heading .section-heading-upper {
+  display: block;
+  font-size: 2rem;
+  font-weight: 800;
+  position: relative;
+}
+
+.section-heading .section-heading-lower {
+  display: block;
+  font-size: 1rem;
+  font-weight: 100;
+  position: relative;
+}
+
+.medium-btn {
+  position: absolute;
+  line-height: 22px;
+  font-size: 15px;
+  font-family: 'Lora', serif;
+  width: 200px;
+  height: 30px;
+}
+
+.btn{
   color: #4fbfa8;
   background-color: #ECF330;
   border-color: #4fbfa8;
@@ -120,7 +166,7 @@ p1{
   margin-left: 1.5em;
 }
 
-.btn-outline {
+.btn{
   color: #1B69DF;
   background-color: #ECF330;
   border-color: #1B69DF;
@@ -128,44 +174,31 @@ p1{
   border-radius: 0;
 }
 
-.btn-outline:hover,
-.btn-outline:active,
-.btn-outline:focus,
-.btn-outline.active {
+.btn:hover,
+.btn:active,
+.btn:focus,
+.btn.active {
   background: #1B69DF;
   color: #ECF330;
   border-color: #1B69DF;
-}
-
-.medium-btn {
-  line-height: 35px;
-  font-size: 20px;
-  font-family: 'Lora', serif;
-  width: 280px;
-  height: 45px;
 }
 
 p2{
   margin-left: 3em;
   font-family: 'Lora', serif;
 }
-
 p20{
   font-family: 'Lora', serif;
 }
-
 h5{
   font-family: 'Lora', serif;
 }
-
 h4{
   font-family: 'Lora', serif;
 }
-
 p3{
   font-family: 'Lora', serif;
 }
-
 p4{
   font-family: 'Lora', serif;
 }
@@ -178,9 +211,6 @@ p4{
             <img src="profile.pdf.JPG" class ="image1" style="width:170px;position:absolute;left:16px;
             top:130px;margin: 0px 15px 15px 0px;" alt="">
       </span>
-    <br>
-    <br>
-    <br>
     <br>
     <br>
     <br>
@@ -280,16 +310,31 @@ p4{
 
 <div id="Education">
     <h2> Education </h2>
-    <p><a href="https://umich.edu/" class="btn btn-outline medium-btn btn-rounded" style="border-radius: 4px;">University of Michigan</a></p>
-    <section class="py-5">
-            <br>
-            <br>
-            <br>
-            2018-2022
-            <br>
-            Bachelors of Science in Computer Science from LSA
-      </section>
+    <div class="sections">
+    <section class="page-section clearfix">
+      <div class="container">
+        <div class="intro">
+          <img class="intro-img img-fluid mb-3 mb-lg-0 rounded" src="img/intro.jpg" alt="">
+          <div class="intro-text left-0 text-center bg-faded p-5 rounded">
+            <h16 class="section-heading mb-4">
+              <span class="section-heading-upper">University of Michigan</span>
+              <span class="section-heading-lower">2018 - 2022</span>
+              <div class="intro-button mx-auto">
+                <p><a href="https://umich.edu/" class="btn medium-btn btn-rounded" style="border-radius: 4px;">Victors: go BLUE!</a></p>
+              </div>
+            </h16>
+          </div>
+        </div>
+      </div>
+    </div>
+    </section>
 </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
     <br>
     <br>
     <br>
@@ -366,15 +411,10 @@ p4{
 <div id="Interests">
       <section class="py-5">
           <h2> Interests</h2>
-          <div class="Interests">
-            Activism <br>
-            LGBTQ+ <br> People of Color <br> Women's Rights <br> Intersectional Movement <br> International Relations
-            <br>
-            Culinary Arts
-            Journalism
-          </div>
-      </section>
+
 </div>
+
+
 
 <div id="Contact">
       <section class="py-5">
