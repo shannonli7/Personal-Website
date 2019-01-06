@@ -25,6 +25,7 @@
 .jumbotron{
   background-image: url("nyc.jpg");
   background-size: cover;
+  margin: 0;
 }
 .textinjumbo{
   text-align: center;
@@ -54,7 +55,7 @@
   color: #f1f1f1;
 }
 h2{
-  text-align: center;
+  text-align: left;
   font-size: 45px;
   text-decoration: underline;
 }
@@ -72,8 +73,8 @@ p{
   text-align: center;
 }
 .carousel {
-  width:620px;
-  height:380px;
+  width:100%;
+  height:100%;
   margin: auto;
 }
 .socialimage{
@@ -156,7 +157,7 @@ p1{
   height: 30px;
 }
 
-.btn{
+.medium-btn{
   color: #4fbfa8;
   background-color: #ECF330;
   border-color: #4fbfa8;
@@ -167,7 +168,7 @@ p1{
   margin-left: 1.5em;
 }
 
-.btn{
+.medium-btn{
   color: #1B69DF;
   background-color: #ECF330;
   border-color: #1B69DF;
@@ -175,10 +176,10 @@ p1{
   border-radius: 0;
 }
 
-.btn:hover,
-.btn:active,
-.btn:focus,
-.btn.active {
+.medium-btn:hover,
+.medium-btn:active,
+.medium-btn:focus,
+.medium-btn.active {
   background: #1B69DF;
   color: #ECF330;
   border-color: #1B69DF;
@@ -204,6 +205,14 @@ p4{
   font-family: 'Lora', serif;
 }
 
+.card-img-top{
+  width: 100%;
+  height: 100%;
+}
+
+.card{
+  display:inline-block;
+}
 </style>
 
 <body>
@@ -233,6 +242,7 @@ p4{
     </div>
     <p> Current: Ann Arbor, Michigan </p>
   </div>
+    <a href="#myCarousel">Home</a>
     <a href="#About">About</a>
     <a href="#Education">Education</a>
     <a href="#Experience">Experience</a>
@@ -297,7 +307,8 @@ p4{
 </div>
 
 <div id="About">
-    <!-- Content section of About Me-->
+  <br>
+  <br>
     <section class="py-5">
         <h2> About Me! </h2>
         <div class="AboutMe">
@@ -307,10 +318,14 @@ p4{
         be a part of the next forthcoming, transforming the world through technology!
         </div>
     </section>
+    <br>
+    <br>
 </div>
 
 <div id="Education">
     <h2> Education </h2>
+    <br>
+    <br>
     <div class="sections">
     <section class="page-section clearfix">
       <div class="container">
@@ -329,16 +344,12 @@ p4{
       </div>
     </div>
     </section>
+   <section class="py-5 bg-image-full" style="background-image: url('https://www.dooney.com/on/demandware.static/-/Sites/default/dw5bcba992/images/refresh/plp/Collegiate_Michigan_PLPBanner_Desktop.png');">
+     <div style="height: 300px;"></div>
+   </section>
+   <br>
+   <br>
 </div>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
 
 <div id="Experience">
       <section class="py-5">
@@ -351,11 +362,15 @@ p4{
             and the intersection between business and technology.
           </div>
       </section>
+      <br>
+      <br>
 </div>
 
 <div id="Projects">
       <section class="py-5">
           <h2> Projects </h2>
+          <br>
+          <br>
           <div class="Projects">
             DJ 183 <br>
             DJ 183 is a music guessing quiz utilizing Billboard's Library to generate
@@ -369,11 +384,15 @@ p4{
             <br>
           </div>
       </section>
+      <br>
+      <br>
 </div>
 
 <div id="Skills">
       <section class="py-5">
           <h2> Skills </h2>
+          <br>
+          <br>
           <div class="Skills">
                 <p20> Google Drive </p20>
                 <div class="progress">
@@ -407,18 +426,41 @@ p4{
                 </div>
           </div>
       </section>
+      <br>
+      <br>
 </div>
 
 <div id="Interests">
       <section class="py-5">
           <h2> Interests</h2>
           <br>
+          <br>
+          <div class="card" style="width: 18rem;">
+            <img class="card-img-top" src="lgbt.jpeg">
+            <div class="card-body">
+              <h5 class="card-title">Activism</h5>
+              <a href="#" class="btn btn-primary">Learn More!</a>
+            </div>
+          </div>
+
+          <div class="card" style="width: 18rem;">
+            <img class="card-img-top" src="lgbt.jpeg">
+            <div class="card-body">
+              <h5 class="card-title">Culinary</h5>
+              <a href="#" class="btn btn-primary">Learn More!</a>
+            </div>
+          </div>
+          <br>
           LGBTQ+ <br> Women's Right <br> People of Color <br> Intersectionality <br>
+          <br>
+          <br>
 </div>
 
 <div id="Contact">
       <section class="py-5">
           <h2>Contact</h2>
+          <br>
+          <br>
           <div class="Contact">
             <center>
             <a href="https://www.linkedin.com/in/shannonli7">
@@ -432,16 +474,22 @@ p4{
             </center>
           </div>
       </section>
+      <br>
+      <br>
 </div>
 
 <div id="Resume">
     <section class="py-5">
       <h2> Resume </h2>
+      <br>
+      <br>
         <div class="Resume-words" style="white-space:nowrap"
             <a target="_blank" href="Resume_ ShannonLi.pdf">
               <img src="resume.jpg.png" class="resume" alt="resume" style="width:150px">
             </a>
         </div>
+        <br>
+        <br>
 </div>
 
 </div>
