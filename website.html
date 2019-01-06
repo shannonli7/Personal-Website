@@ -70,7 +70,7 @@ h2{
 p{
   color: white;
   font-family: 'Lora', serif;
-  font-size: 14px;
+  font-size: 15px;
   text-align: center;
 }
 .carousel {
@@ -145,6 +145,7 @@ p1{
 .section-heading .section-heading-lower {
   display: block;
   font-size: 1rem;
+  font-style: bold;
   font-weight: 100;
   position: relative;
 }
@@ -192,6 +193,7 @@ p2{
 }
 p20{
   font-family: 'Lora', serif;
+  font-size: 20px;
 }
 h5{
   font-family: 'Lora', serif;
@@ -224,13 +226,44 @@ p4{
   text-shadow: 0 1px 2px rgba(0,0,0,.6);
   text-align: center;
 }
+
+@media (min-width: 768px) {
+  /* show 3 items */
+  .carousel-inner .active,
+  .carousel-inner .active + .carousel-item,
+  .carousel-inner .active + .carousel-item + .carousel-item {
+    display: block;
+  }
+
+  .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left),
+  .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item,
+  .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item + .carousel-item {
+    transition: none;
+  }
+
+  .carousel-inner .carousel-item-next,
+  .carousel-inner .carousel-item-prev {
+    position: relative;
+    transform: translate3d(0, 0, 0);
+  }
+
+  .carousel-inner .active.carousel-item + .carousel-item + .carousel-item + .carousel-item {
+    position: absolute;
+    top: 0;
+    right: -33.3333%;
+    z-index: -1;
+    display: block;
+    visibility: visible;
+  }
+}
+
 </style>
 
 <body>
     <div class="sidenav">
       <span class="d-none d-lg-block">
             <img src="profile.pdf.JPG" class ="image1" style="width:170px;position:absolute;left:16px;
-            top:130px;margin: 0px 15px 15px 0px;" alt="">
+            top:90px;margin: 0px 15px 15px 0px;" alt="">
       </span>
     <br>
     <br>
@@ -243,15 +276,22 @@ p4{
     <br>
     <br>
     <br>
-    <br>
     <div id="container" style="white-space:nowrap">
+      <div id="image" style="display:inline;">
+          <img src="locationpin.png" height="20" width="20">
+      </div>
+      <div id="texts" style="display:inline; white-space:nowrap; color:white; font-family: 'Lora', serif; font-size:15px;">
+        <button type="button" class="btn btn-warning btn-sm">New York City</button>
+      </div>
+    </div>
+  <br>
+  <div id="container" style="white-space:nowrap">
     <div id="image" style="display:inline;">
-        <img src="locationpin.png" height="20" width="20">
+      <img src="locationpin.png" height="20" width="20">
     </div>
     <div id="texts" style="display:inline; white-space:nowrap; color:white; font-family: 'Lora', serif; font-size:15px;">
-        Home: New York City
+      <button type="button" class="btn btn-warning btn-sm">Ann Arbor, Michigan</button>
     </div>
-    <p> Current: Ann Arbor, Michigan </p>
   </div>
     <a href="#myCarousel">Home</a>
     <a href="#About">About</a>
@@ -410,7 +450,6 @@ p4{
       <section class="py-5">
           <h2> Skills </h2>
           <br>
-          <br>
           <div class="Skills">
                 <p20> Google Drive </p20>
                 <div class="progress">
@@ -450,28 +489,43 @@ p4{
 
 <div id="Interests">
       <section class="py-5">
-          <h2> Interests</h2>
-          <br>
-          <br>
-          <div class="card" style="width: 18rem;">
-            <img class="card-img-top" src="lgbt.jpeg">
-            <div class="card-body">
-              <h5 class="card-title">Activism</h5>
-              <a href="#" class="btn btn-primary">Learn More!</a>
+        <div class="container-fluid">
+          <h2 class="text-center mb-3">Interests</h2>
+          <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner row w-100 mx-auto">
+              <div class="carousel-item col-md-4 active">
+                <div class="card">
+                  <img class="card-img-top img-fluid" src="lgbt.jpeg" alt="Card image cap">
+                  <div class="card-body">
+                    <h4 class="card-title">Activism</h4>
+                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    <p class="card-text"><small class="text-muted">Check it out!</small></p>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item col-md-4">
+                <div class="card">
+                  <img class="card-img-top img-fluid" src="http://placehold.it/800x600/418cf4/fff" alt="Card image cap">
+                  <div class="card-body">
+                    <h4 class="card-title">Culinary Arts</h4>
+                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    <p class="card-text"><small class="text-muted">Check it out!</small></p>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item col-md-4">
+                <div class="card">
+                  <img class="card-img-top img-fluid" src="http://placehold.it/800x600/3ed846/fff" alt="Card image cap">
+                  <div class="card-body">
+                    <h4 class="card-title">Journalism</h4>
+                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    <p class="card-text"><small class="text-muted">Check it out!</small></p>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
-
-          <div class="card" style="width: 18rem;">
-            <img class="card-img-top" src="lgbt.jpeg">
-            <div class="card-body">
-              <h5 class="card-title">Culinary</h5>
-              <a href="#" class="btn btn-primary">Learn More!</a>
-            </div>
-          </div>
-          <br>
-          LGBTQ+ <br> Women's Right <br> People of Color <br> Intersectionality <br>
-          <br>
-          <br>
+        </div>
 </div>
 
 <div id="Contact">
