@@ -260,7 +260,6 @@ p4{
   font-family: 'Lora', serif;
 }
 
-
 .card{
   display:inline-block;
 }
@@ -311,10 +310,11 @@ h22{
 
 .AboutMe{
   color: white;
+  font-size: 25px;
 }
 
 .sections{
-  background-color: #0D205E;
+  background-color: #012846;
 }
 </style>
 
@@ -431,10 +431,10 @@ h22{
     <source src="https://storage.googleapis.com/coverr-main/mp4/Mt_Baker.mp4" type="video/mp4">
   </video>
   <div class="container h-100">
-    <div class="d-flex h-100 text-center align-items-center">
+    <div class="d-flex h-100 align-items-center">
       <div class="w-100 text-white">
-            <h22 class="display-3 "> About Me! </h22>
-            <div class="AboutMe">
+            <h22 class="display-3 text-left" style="text-decoration:underline"> About Me! </h22>
+            <div class="AboutMe text-center">
             Hi there! I'm Shannon Li. I am currently a freshman at University of Michigan
             planning to major in Computer Science and minor in Business Administration.
             As a queer woman of color interested in pursuing tech, I hope to be a prime representation, and hopefully
@@ -448,7 +448,10 @@ h22{
 
 <div id="Education">
     <div class="sections">
-    <h22 class="display-3 "> Education </h22>
+      <div class="container h-100">
+        <div class="d-flex h-100 align-items-center">
+          <div class="w-100 text-white">
+    <h22 class="display-3" style="text-decoration:underline"> Education </h22>
     <section class="page-section clearfix">
       <div class="container">
         <div class="intro">
@@ -458,13 +461,16 @@ h22{
               <span class="section-heading-upper">University of Michigan</span>
               <span class="section-heading-lower">2018 - 2022</span>
               <div class="intro-button mx-auto">
-                <p><a href="https://umich.edu/" class="btn medium-btn btn-rounded" style="border-radius: 4px;">Victors: go BLUE!</a></p>
+                <p><a href="https://umich.edu/" target="_blank" class="btn medium-btn btn-rounded" style="border-radius: 4px;">Victors: go BLUE!</a></p>
               </div>
             </h16>
           </div>
         </div>
       </div>
     </div>
+  </div>
+  </div>
+  </div>
     </section>
    <section class="py-5 bg-image-full" style="background-image: url('https://www.dooney.com/on/demandware.static/-/Sites/default/dw5bcba992/images/refresh/plp/Collegiate_Michigan_PLPBanner_Desktop.png');">
      <div style="height: 300px;"></div>
@@ -475,27 +481,37 @@ h22{
 
 <div id="Experience">
       <section class="py-5">
-          <h2> Experience </h2>
+        <div class="container h-100">
+          <div class="d-flex h-100 align-items-center">
+            <div class="w-100 text-white">
+          <h2 class="display-3"> Experience </h2>
           <div class="Experience">
             <ul class="list-group">
-              <li class="list-group-item">RBC Capital Market <br>
+              <li class="list-group-item">
+              <div class="display-4"> RBC Capital Market <br>
+              </div>
               Global Market Summer Intern <br>
               As a Global Market Summer Intern, I had the opportunity to work on the
               Sales and Trading team, analyzing VIX graphs, exploring municipal finance,
               and the intersection between business and technology.</li>
-              <li class="list-group-item">Girls Who Code  <br>
+              <li class="list-group-item">
+                <div class="display-4"> Girls Who Code  <br> </div>
               Summer Immersion Participant
               <br>
               Columbia University Girls Who Code
               <br>
               Campus Participant</li>
-              <li class="list-group-item">#BUILTBYGIRLS<br>
+              <li class="list-group-item">
+                <div class="display-4"> #BUILTBYGIRLS<br> </div>
               WAVE Advisee<br>
               Ambassador<br>
               Beta-Tester<br>
               </li>
             </ul>
           </div>
+        </div>
+      </div>
+    </div>
       </section>
       <br>
       <br>
@@ -503,19 +519,25 @@ h22{
 
 <div id="Projects">
       <section class="py-5">
-          <h2> Projects </h2>
+        <div class="container h-100">
+          <div class="d-flex h-100 align-items-center">
+            <div class="w-100 text-white">
+          <h2 class="display-3"> Projects </h2>
           <div class="Projects">
-            DJ 183 <br>
+            <div class="display-4"> DJ 183 <br> </div>
             DJ 183 is a music guessing quiz utilizing Billboard's Library to generate
             genre and song choices for users to guess the correct song! It is coded
             in HTML, CSS, Bootstrap, Python, Google Firebase, and Webscraping </p5>
             <br>
-            Ciphers <br>
+              <div class="display-4"> Ciphers <br> </div>
             Ciphers is a project in which when user enters a message, the user gets
             to choose whether they would like their message crypted or decrypted in
             Caeser cipher, Vigenère cipher, or Polybius square! </p5>
             <br>
           </div>
+        </div>
+      </div>
+    </div>
       </section>
       <br>
       <br>
@@ -523,7 +545,10 @@ h22{
 
 <div id="Skills">
       <section class="py-5">
-          <h2> Skills </h2>
+        <div class="container h-100">
+          <div class="d-flex h-100 align-items-center">
+            <div class="w-100 text-white">
+          <h2 class="display-3"> Skills </h2>
           <br>
           <div class="Skills">
                 <p20> Google Drive </p20>
@@ -557,6 +582,9 @@ h22{
                   </div>
                 </div>
           </div>
+        </div>
+      </div>
+    </div>
       </section>
       <br>
       <br>
@@ -565,7 +593,7 @@ h22{
 <div id="Interests">
       <section class="py-5">
         <div class="container-fluid">
-          <h2 class="text-center mb-3">Interests</h2>
+          <h2 class="text-left mb-3 display-3">Interests</h2>
           <div id="myCarousel" class="carousel slide" data-ride="carousel">
             <div class="carousel-inner row w-100 mx-auto">
               <div class="carousel-item col-md-4 active">
@@ -573,6 +601,29 @@ h22{
                   <img class="card-img-top img-fluid" src="lgbt.jpeg" alt="Card image cap">
                   <div class="card-body">
                     <h4 class="card-title">Activism</h4>
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">Advocacy</th>
+      <th scope="col">Organization</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">LGBTQ+</th>
+      <td>GLAAD, <br> Campus Ambassador</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th scope="row">Women's Rights</th>
+      <td>Girls Who Code <br> Rewriting the Code</td>
+    </tr>
+    <tr>
+      <th scope="row">Intersectionality</th>
+      <td>The United Nations Children's Fund</td>
+    </tr>
+  </tbody>
+</table>
                   </div>
                 </div>
               </div>
@@ -582,6 +633,25 @@ h22{
                   <img class="card-img-top img-fluid" src="culinary.png" alt="Card image cap">
                   <div class="card-body">
                     <h4 class="card-title">Culinary Arts</h4>
+                    <table class="table">
+                      <thead>
+                        <tr>
+                          <th scope="col">Feature</th>
+                          <th scope="col">Award</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <th scope="row">The Washington Post</th>
+                          <td>First Place Top Tomato Award</td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Staten Island Advance</th>
+                          <td>Staten Island Cookbook Contest for Youth and Dessert</td>
+                        </tr>
+                      </tbody>
+                    </table>
                   </div>
                 </div>
               </div>
@@ -591,6 +661,25 @@ h22{
                   <img class="card-img-top img-fluid" src="journalism.png" alt="Card image cap">
                   <div class="card-body">
                     <h4 class="card-title">Journalism</h4>
+                    <table class="table">
+                      <thead>
+                        <tr>
+                          <th scope="col">Feature</th>
+                          <th scope="col">Publication</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <th scope="row">GLAAD: Anti-Bullying</th>
+                          <td>Spirit Day Against LGBTQ+ Bullying</td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">GLAAD: Pursuing STEM</th>
+                          <td>Pursuing STEM as a Queer</td>
+                        </tr>
+                      </tbody>
+                    </table>
                   </div>
                 </div>
               </div>
@@ -601,21 +690,27 @@ h22{
 
 <div id="Contact">
       <section class="py-5">
-          <h2>Contact</h2>
+        <div class="container h-100">
+          <div class="d-flex h-100 align-items-center">
+            <div class="w-100 text-white">
+          <h2 class="display-3">Contact</h2>
           <br>
           <br>
           <div class="Contact">
             <center>
-            <a href="https://www.linkedin.com/in/shannonli7">
-              <img src="linkedin.png" target="_blank" class="socialimage" alt="social" style="width:42px;height:42px;border:0;">
+            <a href="https://www.linkedin.com/in/shannonli7" target="_blank">
+              <img src="linkedin.png" class="socialimage" alt="social" style="width:42px;height:42px;border:0;">
             </a>
-            <a href="https://github.com/shannonli7">
-              <img src="github.png" target="_blank" class="socialimage" alt="social" style="width:42px;height:42px;border:0;">
+            <a href="https://github.com/shannonli7" target="_blank">
+              <img src="github.png" class="socialimage" alt="social" style="width:42px;height:42px;border:0;">
             </a>
-            <a href="mailto:shannon11.6li@gmail.com">
-              <img src="gmail.png" target="_blank" class="socialimage" alt="social" style="width:42px;height:42px;border:0;">
+            <a href="mailto:shannon11.6li@gmail.com" target="_blank">
+              <img src="gmail.png" class="socialimage" alt="social" style="width:42px;height:42px;border:0;">
             </center>
           </div>
+        </div>
+      </div>
+    </div>
       </section>
       <br>
       <br>
@@ -623,7 +718,10 @@ h22{
 
 <div id="Resume">
     <section class="py-5">
-      <h2> Resume </h2>
+      <div class="container h-100">
+        <div class="d-flex h-100 align-items-center">
+          <div class="w-100 text-white">
+      <h2 class="display-3"> Resume </h2>
       <br>
       <br>
         <div class="Resume-words" style="white-space:nowrap"
@@ -631,10 +729,12 @@ h22{
               <img src="resume.jpg.png" class="resume" alt="resume" style="width:150px">
             </a>
         </div>
+      </div>
+    </div>
+  </div>
         <br>
         <br>
 </div>
-
 </div>
 </div>
 </body>
